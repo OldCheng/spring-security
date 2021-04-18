@@ -1,2 +1,7 @@
 server:
   port: 8899
+
+#spring:
+#  mvc:
+#    servlet:
+#      path: /jay

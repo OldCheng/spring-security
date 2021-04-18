@@ -33,6 +33,8 @@ public class UserDetailServiceImpl implements UserDetailsService {
         // 2.比较密码(注册时已经加密过)，如果匹配成功返回UserDetail
         String password = passwordEncoder.encode("123");
 
-        return new User(username, password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin,normal"));
+        return new User(username
+                , password
+                , AuthorityUtils.commaSeparatedStringToAuthorityList("admin, normal, ROLE_abc"));
     }
 }
