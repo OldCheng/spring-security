@@ -5,3 +5,10 @@ server:
 #  mvc:
 #    servlet:
 #      path: /jay
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    password: system
+    url: jdbc:mysql://localhost:3306/security?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&allowMultiQueries=true&useAffectedRows=true&autoReconnectForPools=true
+    username: root
